@@ -1,6 +1,6 @@
 # MinerVeinCoverage
 
-Dyson Sphere Program mod that adds the maximum mining speed in the Miner UI. It will add the text "(X / min)" (where `X` is the maximum exctraction rate for this miner) at the end of the "Cover X vein(s)" text. See screenshots for a much better visual explanation.
+Dyson Sphere Program mod that adds the maximum mining speed in the Miner UI. It will add the text "(X / min)" (where `X` is the maximum extraction rate for this miner) at the end of the "Cover X vein(s)" text. See screenshots for a much better visual explanation.
 
 The value takes into account all of your vein upgrades and also works when the miner is idle or even unpowered.
 
