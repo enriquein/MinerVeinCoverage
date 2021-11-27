@@ -2,3 +2,4 @@
 /lib/*.xml
 obj/
 bin/
+dist/
