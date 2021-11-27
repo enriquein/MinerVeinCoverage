@@ -8,11 +8,11 @@ The value takes into account all of your vein upgrades and also works when the m
 
 Under normal operation (with 5 vein upgrades)
 
-![Normal operation](/screenshot1.png)
+![Normal operation](https://raw.githubusercontent.com/enriquein/MinerVeinCoverage/main/screenshot1.png)
 
 Idle miner because of full belt (with 5 vein upgrades as well)
 
-![Miner idle](/screenshot2.png)
+![Miner idle](https://raw.githubusercontent.com/enriquein/MinerVeinCoverage/main/screenshot2.png)
 
 ## Installation
 
