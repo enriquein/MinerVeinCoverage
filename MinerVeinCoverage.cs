@@ -21,11 +21,10 @@ namespace MinerVeinCoverage
                 }
                 else
                 {
-                    if (minerComponent.type == EMinerType.Vein || minerComponent.type == EMinerType.Water)
+                    if (minerComponent.type == EMinerType.Vein)
                     {
-                        // var speed = minerComponent.veinCount * 30 * 1.5;
                         var speed = (30.0f * GameMain.data.history.miningSpeedScale) * (minerComponent.veinCount * 1.0f);
-                        __instance.coverText.text = $"Cover {minerComponent.veinCount} vein(s) ({speed:F1} / min)";
+                        __instance.coverText.text = $"Cover {minerComponent.veinCount} vein(s) ({speed:F1} / min)"; // TODO: use the localizable text now that you know it works.
                     }
                 }
             }
