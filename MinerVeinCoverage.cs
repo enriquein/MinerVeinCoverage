@@ -24,7 +24,7 @@ namespace MinerVeinCoverage
                     if (minerComponent.type == EMinerType.Vein)
                     {
                         var speed = (30.0f * GameMain.data.history.miningSpeedScale) * (minerComponent.veinCount * 1.0f);
-                        __instance.coverText.text = $"Cover {minerComponent.veinCount} vein(s) ({speed:F1} / min)"; // TODO: use the localizable text now that you know it works.
+                        __instance.coverText.text = $"{"覆盖矿".Translate()}{minerComponent.veinCount}{"个矿脉".Translate()} ({speed:F1} / min)";
                     }
                 }
             }
