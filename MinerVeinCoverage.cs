@@ -6,6 +6,12 @@ namespace MinerVeinCoverage
     [HarmonyPatch("_OnUpdate")]
     static class Patch_UIMinerWindow__OnUpdate
     {
+        private static readonly string _coverText = "覆盖矿".Translate();
+        private static readonly string _veinText = "个矿脉".Translate();
+        private static readonly string _displayUnit = MainPlugin.DisplayAsPerSecond.Value ? "sec" : "min";
+        private static readonly float _displayFactor = MainPlugin.DisplayAsPerSecond.Value ? 60.0f : 1.0f;
+        private static readonly float _oreValuePerNode = 30.0f;
+
         static void Postfix(UIMinerWindow __instance)
         {
             if (__instance.minerId == 0 || __instance.factory == null)
@@ -23,8 +29,9 @@ namespace MinerVeinCoverage
                 {
                     if (minerComponent.type == EMinerType.Vein)
                     {
-                        var speed = (30.0f * GameMain.data.history.miningSpeedScale) * (minerComponent.veinCount * 1.0f);
-                        __instance.coverText.text = $"{"覆盖矿".Translate()}{minerComponent.veinCount}{"个矿脉".Translate()} ({speed:F1} / min)";
+                        var speed = (_oreValuePerNode * GameMain.data.history.miningSpeedScale * minerComponent.veinCount) / _displayFactor;
+                        var speedText = speed.ToString("0.##");
+                        __instance.coverText.text = $"{_coverText}{minerComponent.veinCount}{_veinText} ({speedText} / {_displayUnit})";
                     }
                 }
             }

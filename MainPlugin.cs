@@ -1,4 +1,5 @@
 ﻿using BepInEx;
+using BepInEx.Configuration;
 using HarmonyLib;
 
 namespace MinerVeinCoverage
@@ -11,8 +12,11 @@ namespace MinerVeinCoverage
         public const string ModName = "MinerVeinCoverage";
         public const string ModVersion = "1.2.0";
 
+        public static ConfigEntry<bool> DisplayAsPerSecond { get; set; }
+
         public void Awake()
         {
+            DisplayAsPerSecond = Config.Bind<bool>("Display", "DisplayAsPerSecond", false, "Set to \"true\" to show the production as \"per second\" (default is \"per minute\").");
             var harmony = new Harmony("com.enriquein.plugins.minerveincoverage.patch");
             harmony.PatchAll(typeof(Patch_UIMinerWindow__OnUpdate));
         }
