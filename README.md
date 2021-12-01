@@ -44,24 +44,24 @@ Hopefully that should work.
 
 Please open an issue in the [mod's GitHub repository](https://github.com/enriquein/MinerVeinCoverage).
 
-# Changes
+## Changes
 
-## v1.3 (11/30/2021)
+### v1.3 (11/30/2021)
 
 - Added ability to configure displaying production as "per second". Remember that you need to run the game once after updating the mod
   to create the configuration file. Afterwards, you should be able to edit the configuration through `r2modman` or manually.
 - The display value will no longer show insignificant zeroes in decimal places, and may now show up to two decimal places.
 - Minor optimizations.
 
-## v1.2 (11/27/2021)
+### v1.2 (11/27/2021)
 
 - No functionality changed. Fixed README screenshot links so they could be displayed in the mod store page.
 
-## v1.1 (11/27/2021)
+### v1.1 (11/27/2021)
 
 - The mod will no longer try to add the text value to Water Extractors.
 - Use the localized strings for the "Cover X vein(s)" text.
 
-## v1.0 (11/25/2021)
+### v1.0 (11/25/2021)
 
 - Initial release.
