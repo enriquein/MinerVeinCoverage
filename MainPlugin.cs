@@ -10,7 +10,7 @@ namespace MinerVeinCoverage
     {
         public const string ModGuid = "com.enriquein.plugins.minerveincoverage";
         public const string ModName = "MinerVeinCoverage";
-        public const string ModVersion = "1.2.0";
+        public const string ModVersion = "1.3.0";
 
         public static ConfigEntry<bool> DisplayAsPerSecond { get; set; }
 

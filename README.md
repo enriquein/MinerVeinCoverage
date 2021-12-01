@@ -1,6 +1,8 @@
 # MinerVeinCoverage
 
-Dyson Sphere Program mod that adds the maximum mining speed in the Miner UI. It will add the text "(X / min)" (where `X` is the maximum extraction rate for this miner) at the end of the "Cover X vein(s)" text. See screenshots for a much better visual explanation.
+Dyson Sphere Program mod that adds the maximum mining speed in the Miner UI. It will add the text "(X / min)"
+(where `X` is the maximum extraction rate for this miner) at the end of the "Cover X vein(s)" text.
+See screenshots for a much better visual explanation. Since version 1.3 you can choose to display production as "per second".
 
 The value takes into account all of your vein upgrades and also works when the miner is idle or even unpowered.
 
@@ -13,6 +15,10 @@ Under normal operation (with 5 vein upgrades)
 Idle miner because of full belt (with 5 vein upgrades as well)
 
 ![Miner idle](https://raw.githubusercontent.com/enriquein/MinerVeinCoverage/main/screenshot2.png)
+
+Displaying production per second
+
+![Per second](https://raw.githubusercontent.com/enriquein/MinerVeinCoverage/main/screenshot3.png)
 
 ## Installation
 
@@ -37,3 +43,25 @@ Hopefully that should work.
 ## Contact, feedback, comments, suggestions, bug reports
 
 Please open an issue in the [mod's GitHub repository](https://github.com/enriquein/MinerVeinCoverage).
+
+# Changes
+
+## v1.3 (11/30/2021)
+
+- Added ability to configure displaying production as "per second". Remember that you need to run the game once after updating the mod
+  to create the configuration file. Afterwards, you should be able to edit the configuration through `r2modman` or manually.
+- The display value will no longer show insignificant zeroes in decimal places, and may now show up to two decimal places.
+- Minor optimizations.
+
+## v1.2 (11/27/2021)
+
+- No functionality changed. Fixed README screenshot links so they could be displayed in the mod store page.
+
+## v1.1 (11/27/2021)
+
+- The mod will no longer try to add the text value to Water Extractors.
+- Use the localized strings for the "Cover X vein(s)" text.
+
+## v1.0 (11/25/2021)
+
+- Initial release.
