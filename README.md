@@ -6,6 +6,8 @@ See screenshots for a much better visual explanation. Since version 1.3 you can 
 
 The value takes into account all of your vein upgrades and also works when the miner is idle or even unpowered.
 
+As of version 1.4, it also includes experimental support for the Advanced Mining Machine.
+
 ## Screenshots
 
 Under normal operation (with 5 vein upgrades)
@@ -45,6 +47,11 @@ Hopefully that should work.
 Please open an issue in the [mod's GitHub repository](https://github.com/enriquein/MinerVeinCoverage).
 
 ## Changes
+
+### v1.4 (4/21/2023)
+
+- Added experimental support for the Advanced Mining Machine. I'm aware that when ore is starting to accumulate in the internal storage
+  of the miner, the "Coverage" text can overlap the ore icon. I'm not sure if I have enough Unity knowledge to fix that, sadly.
 
 ### v1.3 (11/30/2021)
 
