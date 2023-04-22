@@ -7,7 +7,11 @@ namespace MinerVeinCoverage
     static class Patch_UIMinerWindow__OnUpdate
     {
         private static readonly string _coverText = "覆盖矿".Translate();
-        private static readonly string _veinText = "个矿脉".Translate();
+        private static readonly string _veinText =
+            Localization.language == Language.enUS
+                ? " veins"
+                : "个矿脉".Translate();
+
         private static readonly string _displayUnit = MainPlugin.DisplayAsPerSecond.Value ? "sec" : "min";
         private static readonly float _displayFactor = MainPlugin.DisplayAsPerSecond.Value ? 60.0f : 1.0f;
         private static readonly float _oreValuePerNode = 30.0f;
@@ -31,7 +35,7 @@ namespace MinerVeinCoverage
                     {
                         var speed = (_oreValuePerNode * GameMain.data.history.miningSpeedScale * minerComponent.veinCount) / _displayFactor;
                         var speedText = speed.ToString("0.##");
-                        __instance.coverText.text = $"{_coverText}{minerComponent.veinCount}{_veinText} ({speedText} / {_displayUnit})";
+                        __instance.coverText.text = $"{_coverText}{minerComponent.veinCount}{_veinText} ({speedText}/{_displayUnit})";
                     }
                 }
             }
@@ -43,7 +47,11 @@ namespace MinerVeinCoverage
     static class Patch_UIVeinCollectorPanel__OnUpdate
     {
         private static readonly string _coverText = "覆盖矿".Translate();
-        private static readonly string _veinText = "个矿脉".Translate();
+        private static readonly string _veinText =
+            Localization.language == Language.enUS
+                ? " veins"
+                : "个矿脉".Translate();
+
         private static readonly string _displayUnit = MainPlugin.DisplayAsPerSecond.Value ? "sec" : "min";
         private static readonly float _displayFactor = MainPlugin.DisplayAsPerSecond.Value ? 60.0f : 1.0f;
         private static readonly float _oreValuePerNode = 60.0f;
@@ -67,7 +75,8 @@ namespace MinerVeinCoverage
                     {
                         var speed = (_oreValuePerNode * (float)GameMain.data.history.miningSpeedScale * (float)minerComponent.veinCount * ((float)minerComponent.speed / 10000.0)) / _displayFactor;
                         var speedText = speed.ToString("0.##");
-                        __instance.coverText.text = $"{_coverText}{minerComponent.veinCount}{_veinText} ({speedText} / {_displayUnit})";
+                        var coverTextUnlessStacking = minerComponent.productCount > 0 ? "" : _coverText;
+                        __instance.coverText.text = $"{coverTextUnlessStacking}{minerComponent.veinCount}{_veinText} ({speedText}/{_displayUnit})";
                     }
                 }
             }

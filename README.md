@@ -48,6 +48,12 @@ Please open an issue in the [mod's GitHub repository](https://github.com/enrique
 
 ## Changes
 
+### v1.4.2 (4/22/2023)
+
+- Make "Cover X veins" text a bit more compact by removing the parenthesis in "vein(s)" (English translation only), and also removing the padding spaces between the amounts per time unit (meaning: show `200/min` instead of `200 / min`). I had originally placed the padding spaces for it to be consistent with other machines that display amount per time unit, but I think that given how the text can overlap the ore icon in the Advanced Mining Machine this is a good compromise.
+
+- Removed the word "Cover" from the Advanced Mining Machine when ore is accumulating. This was done to work around the problem of the "Cover X veins" text overlapping the ore icon when it's being shown. If no ore is being accumulated then the entire text is shown as normal.
+
 ### v1.4.1 (4/22/2023)
 
 - Fixed an issue with the Advanced Mining Machine where the amounts would only update when the speed was at 100%, 200%, and 300%.
