@@ -24,7 +24,7 @@ Displaying production per second
 
 ## Installation
 
-The easiest way to install the mod is to use the `r2modman` mod manager. If you havent installed it yet, you can get it from [here](https://dsp.thunderstore.io/package/ebkr/r2modman/)). Then after you create your profile for Dyson Sphere Program, search for MinerVeinCoverage, select it and download it.
+The easiest way to install the mod is to use the `r2modman` mod manager. If you havent installed it yet, you can get it from [here](https://dsp.thunderstore.io/package/ebkr/r2modman/). Then after you create your profile for Dyson Sphere Program, search for MinerVeinCoverage, select it and download it.
 
 If prompted to download with dependencies, select `Yes`.
 
@@ -47,6 +47,10 @@ Hopefully that should work.
 Please open an issue in the [mod's GitHub repository](https://github.com/enriquein/MinerVeinCoverage).
 
 ## Changes
+
+### v1.4.1 (4/22/2023)
+
+- Fixed an issue with the Advanced Mining Machine where the amounts would only update when the speed was at 100%, 200%, and 300%.
 
 ### v1.4 (4/21/2023)
 

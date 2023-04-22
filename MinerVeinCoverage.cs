@@ -65,7 +65,7 @@ namespace MinerVeinCoverage
                 {
                     if (minerComponent.type == EMinerType.Vein)
                     {
-                        var speed = (_oreValuePerNode * GameMain.data.history.miningSpeedScale * minerComponent.veinCount * (minerComponent.speed / 10000)) / _displayFactor;
+                        var speed = (_oreValuePerNode * (float)GameMain.data.history.miningSpeedScale * (float)minerComponent.veinCount * ((float)minerComponent.speed / 10000.0)) / _displayFactor;
                         var speedText = speed.ToString("0.##");
                         __instance.coverText.text = $"{_coverText}{minerComponent.veinCount}{_veinText} ({speedText} / {_displayUnit})";
                     }
