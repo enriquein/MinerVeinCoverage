@@ -48,6 +48,10 @@ Please open an issue in the [mod's GitHub repository](https://github.com/enrique
 
 ## Changes
 
+### v1.4.3 (4/27/2024)
+
+- Fix an error that was caused by changes in the game's internals.
+
 ### v1.4.2 (4/22/2023)
 
 - Make "Cover X veins" text a bit more compact by removing the parenthesis in "vein(s)" (English translation only), and also removing the padding spaces between the amounts per time unit (meaning: show `200/min` instead of `200 / min`). I had originally placed the padding spaces for it to be consistent with other machines that display amount per time unit, but I think that given how the text can overlap the ore icon in the Advanced Mining Machine this is a good compromise.

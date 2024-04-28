@@ -8,7 +8,7 @@ namespace MinerVeinCoverage
     {
         private static readonly string _coverText = "覆盖矿".Translate();
         private static readonly string _veinText =
-            Localization.language == Language.enUS
+            Localization.isENUS
                 ? " veins"
                 : "个矿脉".Translate();
 
@@ -48,7 +48,7 @@ namespace MinerVeinCoverage
     {
         private static readonly string _coverText = "覆盖矿".Translate();
         private static readonly string _veinText =
-            Localization.language == Language.enUS
+            Localization.isENUS
                 ? " veins"
                 : "个矿脉".Translate();
 

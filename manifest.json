@@ -1,6 +1,6 @@
 {
 	"name": "MinerVeinCoverage",
-	"version_number": "1.4.2",
+	"version_number": "1.4.3",
 	"website_url": "https://github.com/enriquein/MinerVeinCoverage",
 	"description": "Shows the maximum miner extraction speed in the Miner UI.",
 	"dependencies": []
