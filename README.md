@@ -48,6 +48,10 @@ Please open an issue in the [mod's GitHub repository](https://github.com/enrique
 
 ## Changes
 
+### v1.5.0 (October 5, 2025)
+
+- No code changes. Rebuild with the latest reference libraries to match the ones used by the most recent game version (0.10.33.26943).
+
 ### v1.4.3 (4/27/2024)
 
 - Fix an error that was caused by changes in the game's internals.
