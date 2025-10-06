@@ -48,6 +48,10 @@ Please open an issue in the [mod's GitHub repository](https://github.com/enrique
 
 ## Changes
 
+### v1.5.1 (October 6, 2025)
+
+- No code changes. Fix my mistake where I accidentally included the old mod in the package. This version has the updated version of the mod.
+
 ### v1.5.0 (October 5, 2025)
 
 - No code changes. Rebuild with the latest reference libraries to match the ones used by the most recent game version (0.10.33.26943).
